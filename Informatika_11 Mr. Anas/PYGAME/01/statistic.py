@@ -1,4 +1,5 @@
 class Statistic:
+
     intro = True
     game_active = False
     high_score = 0

@@ -8,7 +8,7 @@ class Bird():
     def __init__(self, Game):
         self.screen = Game.screen
         self.screen_rect = Game.screen_rect
-
+        
         image_path = os.path.join(Conf.BASE_DIR, "assets", "bird.png")
         self.image = pygame.image.load(image_path)
         self.rect = self.image.get_rect()
