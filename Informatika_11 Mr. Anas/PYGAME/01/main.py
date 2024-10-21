@@ -83,6 +83,7 @@ class Game:
             for pipe in self.pipes:
                 if pipe.rect.right <= 0:
                     self.reset_pipes()               
+                    
                 pipe.move()
             self.platform.move()
 
