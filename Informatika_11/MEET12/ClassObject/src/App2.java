@@ -1,5 +1,5 @@
 class Siswa {
-    String nama;
+    String nama = "Kaka";
     int nim;
     String jurusan;
 
@@ -8,6 +8,10 @@ class Siswa {
         nim = paramNim;
         jurusan = paramJurusan;
         System.out.println("Nama saya " + nama + " dengan nim = " + nim + " sekarang ada di jurusan " + jurusan);
+    }
+
+    Siswa(Sring paramNama) {
+        System.out.println("Namaku adalah " + paramNama + "temanku adalah " + nama);
     }
 }
 
