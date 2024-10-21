@@ -15,6 +15,13 @@ public class App {
         System.out.println("--------------------------");
         kata.setCharAt(0, 'Z');
         ket(kata);
+        System.out.println("--------------------------");
+        kata.replace(0, 4, "IPA 2");
+        ket(kata);
+        System.out.println("--------------------------");
+        String katalain = kata.toString();
+        Integer alamat = System.identityHashCode(katalain);
+        System.out.println("kata = " + katalain + " address = " + alamat.toHexString(alamat));
     }
     private static void ket(StringBuilder kata) {
         System.out.println(" ");
