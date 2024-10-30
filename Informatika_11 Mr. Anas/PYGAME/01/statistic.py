@@ -1,8 +1,9 @@
 class Statistic:
-    intro = True
-    game_active = True
-    play_again = False
-    
+
+    intro = False
+    game_active = False
+    play_again = True
+
     high_score = 0
     score = 0
     level = 1
@@ -10,6 +11,6 @@ class Statistic:
 
     @staticmethod
     def reset_game():
-        Statistic.high_score = 0
+        Statistic.current_score = 0
         Statistic.level = 1
         Statistic.life = 3
